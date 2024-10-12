@@ -1,0 +1,132 @@
+#nav1 ul,#nav2 ul,#nav3 ul,#nav4 ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none; 
+}
+#nav1 li{
+height: 60px;
+background-color: blue;
+    width: 120px;
+    margin-top: 5PX;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+#nav1 a{
+    color:white;
+    font-family: arial;
+    font-size: 20px;
+    text-decoration: none;
+}
+#nav1 li:hover{
+    background-color: aquamarine;
+}
+#nav1 a:hover{
+    color:blue
+}
+#nav2 a{
+    width: 120px;
+    height: 60px;
+    background-color: red;
+    margin-top: 5px;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+    color:white;
+    font-family: arial;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+}
+#nav2 a:hover{
+    color:red;
+    background-color: pink;
+}
+
+#nav3 li{
+    float: left;
+    margin-right: 20px;
+}
+#nav3 a{
+    display: block;
+    width: 120px;
+    line-height: 60px;
+    background-color: darkgray;
+    text-align: center;
+    color: white;
+    font-family: arial;
+    font-size: 20px;
+    text-decoration: none;
+}
+#nav4 ul{
+    clear: both;
+}
+#nav4 li{
+    display: inline-block;    /* a tagına margin verilmez.display block deseydik verebilirdik */
+    margin-right: 20px;
+    margin-top: 20px;
+    
+}
+#nav4 a{
+    width: 120px;
+    line-height: 60px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+/* ***************Açılır menü*********************** */
+/* *{margin: 0px;
+    padding: 0px;
+} */
+
+#nav5 ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.nav5_ul{
+    position: relative;
+}
+
+#altmenu{
+    /* visibility: hidden; yapısal olarak vardır ama görünmez*/
+    display: none;  /* yapısal olarak yoktur*/
+    position: absolute;
+   left:360px;
+    top:80px;
+}
+#nav5 li{
+    display: inline-block;
+    margin-right: 20px;
+   
+}
+#altmenu li{
+display: block;
+
+}
+#nav5 a{
+    display: block;
+    width: 120px;
+    height: 60px;   /* yükseklik kullanıldıysa padding ve margin kullanıldıysa box sizing kullanmayı unutma */
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+    padding-top: 15px;
+    box-sizing: border-box;
+text-align: center;
+text-decoration: none;
+border-radius: 5px;
+
+}
+.acilirmenu:hover+#altmenu{
+    display: block;
+}
+
+
